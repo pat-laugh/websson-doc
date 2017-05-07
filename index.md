@@ -1,39 +1,57 @@
 ---
 ---
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/pat-laugh/websson-doc/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+WebSSON is a data format language. The goal is to have something that is
+human-readable with minimal redundancy.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Other important goals in developing the language are making sure everything is
+**consistent**, that there are **no surprises**, that it's **simple** to write,
+and that it is **efficient** to parse and serialize.
 
-### Markdown
+I'm developing a parser and a serializer in C++. The source code is available
+[here](https://github.com/pat-laugh/websson-libraries).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This page is intended as a quick tutorial. It is assumed that you'll infer a
+personal understanding of the concepts. Further information about everything
+will be provided in other pages.
 
-```markdown
-Syntax highlighted code block
+## Basic structures
 
-# Header 1
-## Header 2
-### Header 3
+### Dictionary
 
-- Bulleted
-- List
+A dictionary contains key-value pairs. It is declared with braces.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```websson
+{
+	first-name: First
+	last-name: Last
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### List
 
-### Jekyll Themes
+A list only contains values. It is declared with square brackets.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pat-laugh/websson-doc/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```websson
+[
+	true
+	123
+]
+```
 
-### Support or Contact
+## Inspiration based on other formats
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Formats like XML and JSON are considered to be human-readable, but to me they
+don't seem as readable as a human-readable format should be. I looked at
+something like YAML, but I don't like container limits based on tablature. Also,
+YAML doesn't allow tabs (the character), which is just very bad.... About XML,
+it really annoys me to have to remember what tag was opened to then specify it
+when closing it. Using tablature or chars signaling the start and end is much
+better. JSON is good, but not good enough. You could consider WebSSON to be an
+improvement based on JSON. I've used CSV. You can easily get the equivalent of
+CSV with WebSSON.
+
+WebSSON is not a superset of JSON, although you can achieve the same using very
+similar syntax. Especially, strings in WebSSON are **not** exactly like strings
+in JSON. I tried to make things similar, but only if it did not negatively
+affect the quality of the language.
