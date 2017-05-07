@@ -40,6 +40,58 @@ A list only contains values. It is declared with square brackets.
 ]
 ```
 
+## Keys and values
+
+### Keys
+
+A key is a name. A name starts with a letter or any non-Ascii char. After the
+first letter, there can be digits. Hyphens and underscores can be put inside a
+name. They're considered separators; they can only be inside the name and cannot
+be put consecutively. All names are case-sensitive.
+
+Examples of valid names: `a-name`, `a_name`, `aName`, `a01`.
+
+### Value
+
+A value can be a name. It is then considered a keyword or an entity. Entities
+are names that someone can associate with a value.
+
+An incomplete list of keywords include: `null`, `false`, `true`.
+
+A value can also be a number. A number starts with a digit.
+
+It can be a string. A string can be put within quotes, or can be declared using
+a colon, as seen above. The colon represents a *line-string*, a string that fits
+on a single line. Everything after the colon is considered part of the string.
+
+It can also be a structure.
+
+### Associating a value to a key
+
+In the example of the dictionary, there are keys associated to values. There,
+strings are associated to keys. The meaning of the colon is very different in
+WebSSON than it a lot of other languages. It really means to assign a
+line-string. Therefore, doing something like `key: 123` would associate a
+**string** to the key, and not a number!
+
+To associate a number, and anything else, to a key, the equal sign it used.
+For anything that is declared without using the start of a name or a number, the
+equal string can be omitted.
+
+Here's an example:
+```websson
+{
+	first-name: First
+	last-name: Last
+	age = 38
+	numbers
+	{
+		home: 890 456-7123
+		work: 890 357-1246
+	}
+}
+```
+
 ## Inspiration based on other formats
 
 Formats like XML and JSON are considered to be human-readable, but to me they
