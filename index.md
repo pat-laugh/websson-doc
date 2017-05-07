@@ -1,5 +1,6 @@
 ---
 ---
+<style>pre{tab-size:4;}</style>
 
 WebSSON is a data format language. The goal is to have something that is
 human-readable with minimal redundancy.
