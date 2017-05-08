@@ -131,6 +131,8 @@ a comma. This is not always the case. Their behavior depends on context.
 This page describes very succinctly a few of the language's functionalities.
 More information will eventually be written....
 
+More info about [strings](strings).
+
 ## Inspiration based on other formats
 
 Formats like XML and JSON are considered to be human-readable, but to me they
