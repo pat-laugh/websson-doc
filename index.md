@@ -1,4 +1,5 @@
 ---
+last_modif: 2017-05-08
 ---
 WebSSON is a data format language. The goal is to have something that is
 human-readable with minimal redundancy.
