@@ -54,7 +54,7 @@ Examples of valid names: `a-name`, `a_name`, `aName`, `a01`.
 ### Value
 
 A value can be a name. It is then considered a keyword or an entity. Entities
-are names that someone can associate with a value.
+are names that someone associated with a value.
 
 An incomplete list of keywords include: `null`, `false`, `true`.
 
@@ -70,11 +70,11 @@ It can also be a structure.
 
 In the example of the dictionary, there are keys associated to values. There,
 strings are associated to keys. The meaning of the colon is very different in
-WebSSON than it a lot of other languages. It really means to assign a
+WebSSON than in a lot of other languages. It really means to assign a
 line-string. Therefore, doing something like `key: 123` would associate a
 **string** to the key, and not a number!
 
-To associate a number, and anything else, to a key, the equal sign it used.
+To associate a number, and anything else, to a key, the equal sign is used.
 For anything that is declared without using the start of a name or a number, the
 equal string can be omitted.
 
@@ -96,7 +96,7 @@ Here's an example:
 
 ### Tuple
 
-A tuple is like a mix of a dictionary and a list. It maintains the order of
+A tuple is like the mixture of a dictionary and a list. It maintains the order of
 values (like a list), and its values can be accessed by name (like a
 dictionary). It is declared using parentheses.
 
@@ -122,8 +122,8 @@ avoid redundant keys:
 ]
 ```
 
-The example shows a list of tuple sharing the same keys, but with different
-values associated for them. We can also see the line-strings being terminated by
+The example shows a list of tuples sharing the same keys, but with different
+values associated with them. We can also see the line-strings being terminated by
 a comma. This is not always the case. Their behavior depends on context.
 
 ## More stuff
@@ -131,7 +131,7 @@ a comma. This is not always the case. Their behavior depends on context.
 This page describes very succinctly a few of the language's functionalities.
 More information will eventually be written....
 
-More info about [strings](strings).
+More information about [strings](strings).
 
 ## Inspiration based on other formats
 
@@ -149,3 +149,8 @@ WebSSON is not a superset of JSON, although you can achieve the same using very
 similar syntax. Especially, strings in WebSSON are **not** exactly like strings
 in JSON. I tried to make things similar, but only if it did not negatively
 affect the quality of the language.
+
+By the way, WebSSON is an acronym for WebSS Object Notation. WebSS is another
+language I am developing. Its name is an acronym for Web Source-to-Source. I
+started developing WebSS before WebSSON, but have since spent much more effort
+on WebSSON.

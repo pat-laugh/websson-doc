@@ -25,7 +25,7 @@ char and after the last non-whitespace char is ignored.
 
 For example, `:  a string  `, would be equivalent to `"a string"`.
 
-## Multi-line string
+## Multiline-string
 
 The multiline-string is declared by two colons put together, followed by braces.
 
@@ -47,11 +47,11 @@ character.
 The characters a, b, f, n, r, t, v, x, u, and U have the same meaning than in
 the C programming language. There are also the chars e, for empty, and s, for
 space. The escape s puts a space, which can be useful if a space is needed at
-the start of end of a line-string. The escape e puts nothing. It can be useful
+the start or end of a line-string. The escape e puts nothing. It can be useful
 to make it explicit that a string is empty.
 
 The escape 0 represent the null char. It is **not** an octal escape! There are
 no octal escapes in WebSSON.
 
 All printable Ascii non-digit and non-letter chars are escapable. This means
-`'\\'`, `'\"'`, `'\?'`, etc., are all valid escapes.
+`'\\'`, `'\"'`, `'\?'`, `'\:'`, etc., are all valid escapes.
