@@ -92,6 +92,40 @@ Here's an example:
 }
 ```
 
+## Advanced structures
+
+### Tuple
+
+A tuple is like a mix of a dictionary and a list. It maintains the order of
+values (like a list), and its values can be accessed by name (like a
+dictionary). It is declared using parentheses.
+
+```websson
+(
+	name: First Last
+	38
+)
+```
+
+### Template
+
+A template is used in conjunction with tuples to avoid duplication of keys. It
+is declared using angle brackets.
+
+For example, to make a list people's names and age, a template could be used to
+avoid redundant keys:
+```websson
+<first-name, last-name, age>
+[
+	(:First, :Last, 38)
+	(:Second, :Third, 47)
+]
+```
+
+The example shows a list of tuple sharing the same keys, but with different
+values associated for them. We can also see the line-strings being terminated by
+a comma. This is not always the case. Their behavior depends on context.
+
 ## Inspiration based on other formats
 
 Formats like XML and JSON are considered to be human-readable, but to me they
@@ -99,7 +133,7 @@ don't seem as readable as a human-readable format should be. I looked at
 something like YAML, but I don't like container limits based on tablature. Also,
 YAML doesn't allow tabs (the character), which is just very bad.... About XML,
 it really annoys me to have to remember what tag was opened to then specify it
-when closing it. Using tablature or chars signaling the start and end is much
+when closing it. Using tablature or chars signalling the start and end is much
 better. JSON is good, but not good enough. You could consider WebSSON to be an
 improvement based on JSON. I've used CSV. You can easily get the equivalent of
 CSV with WebSSON.
