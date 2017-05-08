@@ -15,7 +15,9 @@ The c-string &mdash; named as such because it is used in the C programming
 language &mdash; is delimited by quotes. Everything within is part of the
 string.
 
-	"this is a c-string"
+```websson
+"this is a c-string"
+```
 
 ## Line-string
 
@@ -29,11 +31,13 @@ For example, `:  a string  `, would be equivalent to `"a string"`.
 
 The multiline-string is declared by two colons put together, followed by braces.
 
-	::
-	{
-		This is a
-		multiline-string
-	}
+```websson
+::
+{
+	This is a
+	multiline-string
+}
+```
 
 Each line behaves exactly like a line-string. The lines are appended together,
 separated by a space. The above example would be equivalent to
@@ -55,3 +59,16 @@ no octal escapes in WebSSON.
 
 All printable Ascii non-digit and non-letter chars are escapable. This means
 `'\\'`, `'\"'`, `'\?'`, `'\:'`, etc., are all valid escapes.
+
+## Escaped entities
+
+An entity can be escaped by immediately preceding its name with a question mark
+(the same char used to define one). Only entities of type string are allowed to
+be escaped.
+
+```websson
+?name: First Last
+result: My name is ?name!
+```
+
+The content associated with result would be `My name is First Last!`.
