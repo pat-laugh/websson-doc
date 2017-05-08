@@ -1,7 +1,5 @@
 ---
 ---
-<style>pre{tab-size:4;}</style>
-
 # Strings
 
 There are 3 ways to represent a string. There are the c-string, the line-string
