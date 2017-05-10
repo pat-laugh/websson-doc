@@ -42,7 +42,8 @@ single lowercase letter aliases.
 
 Entities are names that are equivalent to a value. There are two kinds of
 entities: abstract and concrete. Abstract entities are declared with `!`, and
-concrete entities with `?`.
+concrete entities with `?`. The name must not conflict with a keyword (except if
+within a namespace, as explained far below).
 
 Entities are used by simply writing their name, like for a keyword.
 
@@ -76,5 +77,15 @@ A key of the name "true" is associated with the keyword `true`. As said above,
 in a dictionary, since there can only be key-values, all keys are implicitly
 explicit.
 
-## Scoped name
+## Namespace and scoped name
 
+An entity within a namespace can be accessed by using the scope resolution
+operator: `.`. Only a namespace may be followed by it.
+
+```websson
+!nspace { ?ent = 200 }
+value = nspace.ent
+```
+
+Entities' names must only be unique within their namespace, and can be the same
+as keywords or entities defined before.
