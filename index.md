@@ -1,5 +1,5 @@
 ---
-last_modif: 2017-05-08
+last_modif: 2017-05-10
 ---
 WebSSON is a data format language. The goal is to have something that is
 human-readable with minimal redundancy.
@@ -53,7 +53,7 @@ Examples of valid names: `a-name`, `a_name`, `aName`, `a01`.
 ### Value
 
 A value can be a name. It is then considered a keyword or an entity. Entities
-are names that someone associated with a value.
+are names that someone made equivalent to a value.
 
 An incomplete list of keywords include: `null`, `false`, `true`.
 
@@ -131,6 +131,7 @@ This page describes very succinctly a few of the language's functionalities.
 More information will eventually be written....
 
 More information about [strings](strings).
+More information about [names and keywords](names).
 
 ## Inspiration based on other formats
 
