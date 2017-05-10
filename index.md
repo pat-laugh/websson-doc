@@ -130,8 +130,8 @@ a comma. This is not always the case. Their behavior depends on context.
 This page describes very succinctly a few of the language's functionalities.
 More information will eventually be written....
 
-More information about [strings](strings).
-More information about [names and keywords](names).
+ - [Strings](strings)
+ - [Names and keywords](names)
 
 ## Inspiration based on other formats
 
