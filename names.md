@@ -15,7 +15,7 @@ equivalent value.
 
 | Keyword | One-letter alias | Other aliases |
 | ------- | ------- | --- |
-| `null`  | `N` | `Null`, `nil`, `Nil` |
+| `null`  | `N` | `Null`, `nil`, `Nil`, `none`, `None` |
 | `false` | `F` | `False` |
 | `true`  | `T` | `True` |
 | `bool`  | `B` | `Bool` |
