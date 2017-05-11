@@ -132,6 +132,7 @@ More information will eventually be written....
 
  - [Strings](strings)
  - [Names and keywords](names)
+ - [Entities](entities)
 
 ## Inspiration based on other formats
 
