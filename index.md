@@ -134,6 +134,7 @@ More information will eventually be written....
  - [Names and keywords](names)
  - [Entities](entities)
  - [Comments](comments)
+ - [Whitespace and separators](whitespace)
 
 ## Inspiration based on other formats
 
