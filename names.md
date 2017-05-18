@@ -37,15 +37,19 @@ within a namespace, as explained far below).
 Entities are used by simply writing their name, like for a keyword.
 
 ```websson
-!person<firstName, lastName, age>
+!Person<firstName, lastName, age>
 ?name: Last
 
-<person>
+<^Person>
 [
 	(:First, name, 38)
 	(:Second, name, 47)
 ]
 ```
+
+The example shows a list of tuples each associated with a template head. The `^`
+before `Person` tells the parser to expand the entity so that its values are put
+inside the container rather than the entity itself.
 
 ## Key
 
