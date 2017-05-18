@@ -1,5 +1,5 @@
 ---
-last_modif: 2017-05-08
+last_modif: 2017-05-17
 ---
 # Strings
 
@@ -61,13 +61,14 @@ All printable Ascii non-digit and non-letter chars are escapable. This means
 
 ## Escaped entities
 
-An entity can be escaped by immediately preceding its name with a question mark
-(the same char used to define one). Only entities of type string are allowed to
-be escaped.
+An entity can be escaped by immediately preceding its name with a caret
+(`'^'`). Only entities of type string are allowed to be escaped.
 
 ```websson
 ?name: First Last
-result: My name is ?name!
+result: My name is ^name!
 ```
 
 The content associated with result would be `My name is First Last!`.
+
+Entities can be escaped in any kind of string.
