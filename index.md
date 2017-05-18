@@ -1,5 +1,5 @@
 ---
-last_modif: 2017-05-11
+last_modif: 2017-05-17
 ---
 WebSSON is a data format language. The goal is to have something that is
 human-readable with minimal redundancy.
@@ -23,8 +23,8 @@ A dictionary contains key-value pairs. It is declared with braces.
 
 ```websson
 {
-	first-name: First
-	last-name: Last
+	firstName: First
+	lastName: Last
 }
 ```
 
@@ -80,8 +80,8 @@ equal string can be omitted.
 Here's an example:
 ```websson
 {
-	first-name: First
-	last-name: Last
+	firstName: First
+	lastName: Last
 	age = 38
 	numbers
 	{
@@ -114,7 +114,7 @@ is declared using angle brackets.
 For example, to make a list people's names and age, a template could be used to
 avoid redundant keys:
 ```websson
-<first-name, last-name, age>
+<firstName, lastName, age>
 [
 	(:First, :Last, 38)
 	(:Second, :Third, 47)

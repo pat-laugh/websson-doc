@@ -1,5 +1,5 @@
 ---
-last_modif: 2017-05-11
+last_modif: 2017-05-17
 ---
 # Names
 
@@ -37,7 +37,7 @@ within a namespace, as explained far below).
 Entities are used by simply writing their name, like for a keyword.
 
 ```websson
-!person<first-name, last-name, age>
+!person<firstName, lastName, age>
 ?name: Last
 
 <person>
