@@ -38,8 +38,8 @@ template head inside an entity to avoid repetition.
 
 ```websson
 !Person<name, age>
-person1 = <^Person>(:First Last, 38)
-person2 = <^Person>(:Second Third, 38)
+person1 = <Person>(:First Last, 38)
+person2 = <Person>(:Second Third, 38)
 ```
 
 ### Namespace
@@ -53,7 +53,7 @@ It is declared by following the entity name with braces.
 	!Person<name, age>
 	?age = 38
 }
-person1<^nspace.Person>(:First Last, nspace.age)
+person1<nspace.Person>(:First Last, nspace.age)
 ```
 
 ### Enum
