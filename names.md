@@ -1,5 +1,5 @@
 ---
-last_modif: 2017-05-17
+last_modif: 2017-05-26
 ---
 # Names
 
@@ -40,7 +40,7 @@ Entities are used by simply writing their name, like for a keyword.
 !Person<firstName, lastName, age>
 ?name: Last
 
-<Person>
+Person
 [
 	(:First, name, 38)
 	(:Second, name, 47)
