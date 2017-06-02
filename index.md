@@ -1,5 +1,5 @@
 ---
-last_modif: 2017-06-01
+last_modif: 2017-06-02
 ---
 WebSSON is a data format language. The goal is to have something that is
 human-readable with minimal redundancy.
@@ -136,6 +136,7 @@ More information will eventually be written....
  - [Comments](comments)
  - [Whitespace and separators](whitespace)
  - [Operators](operators)
+ - [The document](document)
 
 ## Inspiration based on other formats
 
