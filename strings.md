@@ -18,6 +18,8 @@ string.
 "this is a c-string"
 ```
 
+Single quotes are not usable as delimiters &mdash; in fact, they do nothing in WebSSON.
+
 ## Line-string
 
 The line-string is declared with a colon. Only characters on the same line as
@@ -60,12 +62,12 @@ The escape 0 represent the null char. It is **not** an octal escape! There are
 no octal escapes in WebSSON.
 
 All printable Ascii non-digit and non-letter chars are escapable. This means
-`'\\'`, `'\"'`, `'\?'`, `'\:'`, etc., are all valid escapes.
+`\\`, `\"`, `\^`, `\:`, etc., are all valid escapes.
 
 ## Escaped entities
 
 An entity can be escaped by immediately preceding its name with a caret
-(`'^'`). Only entities of type string are allowed to be escaped.
+(`^`). Only entities of type string are allowed to be escaped.
 
 ```websson
 ?name: First Last
