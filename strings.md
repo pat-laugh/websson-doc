@@ -1,5 +1,5 @@
 ---
-last_modif: 2017-05-17
+last_modif: 2017-06-09
 ---
 # Strings
 
@@ -47,9 +47,12 @@ separated by a space. The above example would be equivalent to
 A character is escaped by using the backslash, immediately followed by another
 character.
 
+`\ [ 0 | a | b | c | e | f | n | r | s | t | v | x## | u#### | U######## ]`
+
 The characters a, b, f, n, r, t, v, x, u, and U have the same meaning than in
-the C programming language. There are also the chars e, for empty, and s, for
-space. The escape s puts a space, which can be useful if a space is needed at
+the C programming language. There are also the chars e, for empty, s, for
+space, and c, for escape (Ascii char). The escape s puts a space, which can be
+useful if a space is needed at
 the start or end of a line-string. The escape e puts nothing. It can be useful
 to make it explicit that a string is empty.
 
