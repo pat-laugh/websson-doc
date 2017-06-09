@@ -58,7 +58,7 @@ useful if a space is needed at
 the start or end of a line-string. The escape e puts nothing. It can be useful
 to make it explicit that a string is empty.
 
-The escape 0 represent the null char. It is **not** an octal escape! There are
+The escape 0 represents the null char. It is **not** an octal escape! There are
 no octal escapes in WebSSON.
 
 All printable Ascii non-digit and non-letter chars are escapable. This means
